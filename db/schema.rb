@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2021_03_22_150417) do
 
   create_table "artist_instruments", force: :cascade do |t|
     t.integer "artist_id"
-    t.integer "intrument_id"
+    t.integer "instrument_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

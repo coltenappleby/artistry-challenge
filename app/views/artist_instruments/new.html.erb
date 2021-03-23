@@ -1,0 +1,8 @@
+</h1> Create a new link between Artsit and Instrument </h1>]
+
+
+<%= form_for(@artist_instrument) do |f| %>
+<%= f.collection_select :artist_id, Artist.order(:name), :id, :name %>
+<%= f.collection_select :instrument_id, Instrument.order(:name), :id, :name %>
+<%= f.submit %>
+<% end %>
